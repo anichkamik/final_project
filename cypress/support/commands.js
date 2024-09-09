@@ -63,7 +63,7 @@ Cypress.Commands.add('registration', () => {
     cy.get('.avtorization > .input-shablon > .form-button').click()
 })
 
-Cypress.Commands.add('addCart', () => { cy.fixture("example.json").then((userData) => {
+ Cypress.Commands.add('addCart', () => { 
     // Click 'menu button
     cy.get('.popmenu-burger > .burger-span').click()
     // choose first category
@@ -80,7 +80,7 @@ Cypress.Commands.add('addCart', () => { cy.fixture("example.json").then((userDat
     cy.get('.bred > :nth-child(2) > a').should("have.text","კალათა")
     // Verify product is added to Cart
     cy.get('.cart-item').should("be.visible")
-  })
+})
 
     
     
